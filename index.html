@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список фильмов</title>
+    <link rel="icon" href="./styles/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <main class="movie-list">
+      <div class="container">
+        <header class="movie-list-header">
+          <ul class="movie-list-labels">
+            <li class="movie-list-label">
+              <p class="movie-list-label-text">Список фильмов</p>
+            </li>
+            <li class="movie-list-label">
+              <p class="movie-list-label-text">2025</p>
+            </li>
+          </ul>
+
+          <h1 class="movie-list-title">Посмотреть</h1>
+        </header>
+        <div class="movies-wrapper">
+          <div class="movies-wrapper__items">
+            <input
+              class="js-movie-add-input movie-add-input"
+              type="text"
+              placeholder="Добавить фильм"
+              aria-label="Добавить фильм"
+            />
+            <button
+              class="js-movie-add-btn movie-add-btn"
+              aria-label="Добавить"
+            ></button>
+          </div>
+          <div class="movies-scroll-wrapper">
+            <ul class="js-movies movies"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
